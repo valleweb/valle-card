@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>valle-card demo</title>
+
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+
+    <script type="module" src="../node_modules/@polymer/iron-demo-helpers/demo-pages-shared-styles.js"></script>
+    <script type="module" src="../node_modules/@polymer/iron-demo-helpers/demo-snippet.js"></script>
+    <script type="module" src="../valle-card.js"></script>
+
+    <custom-style>
+      <style is="custom-style" include="demo-pages-shared-styles">
+      </style>
+    </custom-style>
+  </head>
+  <body>
+    <div class="vertical-section-container centered">
+      <h3>Basic valle-card demo</h3>
+      <demo-snippet>
+        <template>
+          <valle-card>
+            <h1>Título do card</h1>
+            <p>Conteúdo do card pode vir aqui</p>
+          </valle-card>
+        </template>
+      </demo-snippet>
+
+      <h3>Custom valle-card demo</h3>
+      <demo-snippet>
+        <template>
+          <style is="custom-style">
+            .my-card-custom {
+              --valle-card-bg-color: #CD96CD;
+              --valle-card-width: 600px;
+              --valle-card-padding: 5px;
+              --valle-card-margin: 10px;
+            }
+          </style>
+          <valle-card class="my-card-custom">
+            <h1>Título do card</h1>
+            <p>Conteúdo do card pode vir aqui</p>
+          </valle-card>
+        </template>
+      </demo-snippet>
+    </div>
+  </body>
+</html>
