@@ -2,6 +2,9 @@
 
 > Awesome valle card element - Web Component using Polymer 3x
 
+[![npm](https://img.shields.io/npm/v/@valle/valle-card.svg)](https://www.npmjs.com/package/@valle/valle-card)
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/@valle/valle-card)
+
 ## How to install and use:
 
 1 - Install the element using [Yarn](http://yarn.io/):
@@ -28,7 +31,7 @@ import "valle-card/valle-card.js";
 ```
 <custom-element-demo>
   <template>
-    <link rel="import" href="index.html">
+    <script type="module" src="valle-card.js"></script>
     <next-code-block></next-code-block>
   </template>
 </custom-element-demo>
