@@ -1,5 +1,5 @@
 {
-  "name": "valle-card",
+  "name": "@valle/valle-card",
   "description": "Awesome valle card - Web Component using Polymer 3x",
   "version": "0.1.0",
   "authors": [
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/valleweb/valle-card"
+    "url": "git+https://github.com/valleweb/valle-card.git"
   },
   "keywords": [
     "polymer",
     "polymer-3",
     "web-components"
   ],
-  "license": "https://github.com/valleweb/valle-card/blob/master/LICENSE.md",
+  "license": "MIT",
   "demos": {
     "demo": "demo/index.html"
   },
