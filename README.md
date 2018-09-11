@@ -2,10 +2,6 @@
 
 > Awesome valle card element - Web Component using Polymer 3x
 
-# up-mushroom
-
-> Polymer 3 up-mushroom element
-
 ## How to install and use:
 
 1 - Install the element using [Yarn](http://yarn.io/):
