@@ -13,7 +13,7 @@ $ yarn add @valle/valle-card
 2 -  Import the element:
 
 ```html
-<script type="module" src="node_modules/valle-card/valle-card.js"></script>
+<script type="module" src="node_modules/@valle-card/valle-card/valle-card.js"></script>
 ```
 
 or in your javascript file
