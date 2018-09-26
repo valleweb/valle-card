@@ -1,28 +1,21 @@
 # valle-card
 
-> Awesome valle card element - Web Component using Polymer 3x
+> Awesome valle card - Web Component using Polymer 2x
 
-[![npm](https://img.shields.io/npm/v/@valle/valle-card.svg)](https://www.npmjs.com/package/@valle/valle-card)
-[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/@valle/valle-card)
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/valleweb/valle-card)
 
 ## How to install and use:
 
-1 - Install the element using [Yarn](http://yarn.io/):
+1 - Install the element using [Bower](http://bower.io/):
 
 ```sh
-$ yarn add @valle/valle-card
+$ bower install valle-card --save
 ```
 
 2 -  Import the element:
 
 ```html
-<script type="module" src="node_modules/@valle-card/valle-card/valle-card.js"></script>
-```
-
-or in your javascript file
-
-```js
-import "valle-card/valle-card.js";
+<link rel="import" href="bower_components/valle-card/valle-card.html">
 ```
 
 3 - Start using it!
@@ -31,7 +24,7 @@ import "valle-card/valle-card.js";
 ```
 <custom-element-demo>
   <template>
-    <script type="module" src="valle-card.js"></script>
+    <link rel="import" href="valle-card.html">
     <next-code-block></next-code-block>
   </template>
 </custom-element-demo>
@@ -46,12 +39,13 @@ import "valle-card/valle-card.js";
 
 The following custom properties and mixins are available for styling:
 
-Custom property           | Default                   | Description
-:---                      |:---                       |:---
---valle-card-bg-color     | `#fff`                    | Valle card background color
---valle-card-width        | `400px`                   | Valle card max-width
---valle-card-padding      | `16px`                    | Valle card padding
---valle-card-margin       | `16px`                    | Valle card margin (used to calculate the valle card width)
+Custom property           | Default  | Description
+:---                      |:---      |:---
+--valle-card-bg-color     | `#fff`   | Valle card background color
+--valle-card-width        | `400px`  | Valle card max-width
+--valle-card-padding      | `16px`   | Valle card padding
+--valle-card-margin       | `16px`   | Valle card margin (used to calculate the valle card width)
+
 
 ## Browser Support
 
@@ -63,21 +57,19 @@ Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | 11+ | Latest ✔
 
 ## Development
 
-1 - Verify if you have [node](http://nodejs.org/) and [yarn](http://yarn.io/) installed.
-
-2 - Install [Polymer-CLI](https://www.polymer-project.org/1.0/docs/tools/polymer-cli):
+1 - Install [Bower](http://bower.io/) & [Polymer-CLI](https://www.polymer-project.org/1.0/docs/tools/polymer-cli):
 
 ```sh
-$ [sudo] yarn global add polymer-cli
+$ [sudo] yarn global add bower polymer-cli
 ```
 
-3 - Install local dependencies:
+2 - Install local dependencies:
 
 ```sh
-$ yarn install
+$ bower install
 ```
 
-4 - Start the development server:
+3 - Start the development server:
 
 ```sh
 $ polymer serve

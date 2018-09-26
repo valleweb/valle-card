@@ -1,7 +1,7 @@
 {
   "lint": {
     "rules": [
-      "polymer-3"
+      "polymer-2"
     ]
   }
 }
