@@ -1,0 +1,41 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="valle-card">
+  <template>
+
+    <style>
+
+      :host {
+        --valle-card-margin: 16px;
+        --total-margin: calc(var(--valle-card-margin) * 2);
+        background-color: var(--valle-card-bg-color, #fff);
+        border-radius: 4px;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+                    0 1px 5px 0 rgba(0, 0, 0, 0.12),
+                    0 3px 1px -2px rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        margin: var(--valle-card-margin);
+        max-width: var(--valle-card-width, 400px);
+        padding: var(--valle-card-padding, 16px);
+        position: relative;
+        width: calc(100% - var(--total-margin));
+      }
+
+    </style>
+
+    <slot></slot>
+
+  </template>
+
+  <script>
+    class valleElement extends Polymer.Element {
+
+      static get is() { return 'valle-card'; }
+
+    }
+
+    window.customElements.define(valleElement.is, valleElement);
+  </script>
+</dom-module>
