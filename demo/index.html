@@ -1,71 +1,33 @@
 <!doctype html>
-
 <html lang="en">
-
   <head>
-    <title>valle-card demo</title>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
-    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
-    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
-    <link rel="import" href="../valle-card.html">
-  </head>
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
 
-  <body>
+    <title>valle-card demo</title>
+
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+
+    <script type="module">
+      import '@polymer/iron-demo-helpers/demo-pages-shared-styles';
+      import '@polymer/iron-demo-helpers/demo-snippet';
+    </script>
+
+    <script type="module" src="../valle-card.js"></script>
 
     <custom-style>
       <style is="custom-style" include="demo-pages-shared-styles">
-        .vertical-section-container {
-          max-width: 500px;
-        }
       </style>
     </custom-style>
-
-    <main class="vertical-section-container centered">
-      <h1>valle-card demo</h1>
-
-      <!-- Default - demo
-      ========================= -->
-
-      <h2>Basic valle-card demo</h2>
-
-      <demo-snippet class="centered-demo">
+  </head>
+  <body>
+    <div class="vertical-section-container centered">
+      <h3>Basic valle-card demo</h3>
+      <demo-snippet>
         <template>
-
-          <valle-card>
-            <h1>Título do card</h1>
-            <p>Conteúdo do card pode vir aqui</p>
-          </valle-card>
-
+          <valle-card></valle-card>
         </template>
       </demo-snippet>
-
-      <!-- Custom style - demo
-      ========================= -->
-
-      <h2>Custom valle-card demo</h2>
-
-      <demo-snippet class="centered-demo">
-        <template>
-
-          <style is="custom-style">
-            .my-card-custom {
-              --valle-card-bg-color: #CD96CD;
-              --valle-card-width: 600px;
-              --valle-card-padding: 5px;
-              --valle-card-margin: 10px;
-            }
-          </style>
-          <valle-card class="my-card-custom">
-            <h1>Título do card</h1>
-            <p>Conteúdo do card pode vir aqui</p>
-          </valle-card>
-
-        </template>
-      </demo-snippet>
-
-    </main>
-
+    </div>
   </body>
 </html>
