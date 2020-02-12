@@ -20,14 +20,30 @@
       </style>
     </custom-style>
   </head>
+
   <body>
     <div class="vertical-section-container centered">
-      <h3>Basic valle-card demo</h3>
+      <h1>All valle-card demo</h1>
+
+      <!-- Default -->
+      <h3>Default</h3>
       <demo-snippet>
         <template>
-          <valle-card></valle-card>
+          <valle-card>This is a card</valle-card>
         </template>
       </demo-snippet>
+
+      <!-- With a title and a text -->
+      <h3>With a title and a text</h3>
+      <demo-snippet>
+        <template>
+          <valle-card>
+            <h2>Title here</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tellus ex, tempor sit amet semper eu, pharetra id tortor. Vestibulum in neque imperdiet, fermentum purus ac, efficitur metus.</p>
+          </valle-card>
+        </template>
+      </demo-snippet>
+
     </div>
   </body>
 </html>
