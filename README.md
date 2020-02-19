@@ -1,21 +1,28 @@
 # valle-card
 
-> Awesome valle card - Web Component using Polymer 2x
+> Awesome valle-card - Web Component using Polymer 3
 
-[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/valleweb/valle-card)
+[![npm](https://img.shields.io/npm/v/@valle/valle-card.svg)](https://www.npmjs.com/package/@valle/valle-card)
+[![Published on webcomponents.org](https://img.shields.io/badge/webcomponents.org-published-blue.svg)](https://www.webcomponents.org/element/@valle/valle-card)
 
 ## How to install and use:
 
-1 - Install the element using [Bower](http://bower.io/):
+1 - Install the element using [Yarn](http://yarn.io/):
 
 ```sh
-$ bower install valle-card --save
+$ yarn add @valle/valle-card
 ```
 
 2 -  Import the element:
 
 ```html
-<link rel="import" href="bower_components/valle-card/valle-card.html">
+<script type="module" src="node_modules/@valle/valle-card/valle-card.js"></script>
+```
+
+or in your javascript file
+
+```js
+import "@valle/valle-card/valle-card.js";
 ```
 
 3 - Start using it!
@@ -24,7 +31,7 @@ $ bower install valle-card --save
 ```
 <custom-element-demo>
   <template>
-    <link rel="import" href="valle-card.html">
+    <script type="module" src="./valle-card.js"></script>
     <next-code-block></next-code-block>
   </template>
 </custom-element-demo>
@@ -46,7 +53,6 @@ Custom property           | Default  | Description
 --valle-card-padding      | `16px`   | Valle card padding
 --valle-card-margin       | `16px`   | Valle card margin (used to calculate the valle card width)
 
-
 ## Browser Support
 
 Using the [webcomponents.js](https://github.com/WebComponents/webcomponentsjs):
@@ -57,25 +63,25 @@ Latest ✔ | Latest ✔ | Latest ✔ | Latest ✔ | 11+ | Latest ✔
 
 ## Development
 
-1 - Install [Bower](http://bower.io/) & [Polymer-CLI](https://www.polymer-project.org/1.0/docs/tools/polymer-cli):
+1 - Verify if you have [node](http://nodejs.org/) and [yarn](http://yarn.io/) installed.
+
+2 - Install [Polymer-CLI](https://polymer-library.polymer-project.org/3.0/docs/install-3-0#cli):
 
 ```sh
-$ [sudo] yarn global add bower polymer-cli
+$ [sudo] yarn global add polymer-cli
 ```
 
-2 - Install local dependencies:
+3 - Install local dependencies:
 
 ```sh
-$ bower install
+$ yarn
 ```
 
-3 - Start the development server:
+4 - Start the development server:
 
 ```sh
-$ polymer serve
+$ yarn start
 ```
-
-Go to [localhost:8080/components/valle-card/](http://localhost:8080/components/valle-card/)
 
 ## Versioning
 
